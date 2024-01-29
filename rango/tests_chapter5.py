@@ -177,7 +177,6 @@ class Chapter5AdminInterfaceTests(TestCase):
         expected_str = '<tr class="row1"><td class="action-checkbox"><input type="checkbox" name="_selected_action" value="1" class="action-select"></td><th class="field-title"><a href="/admin/rango/page/1/change/">TestPage1</a></th><td class="field-category nowrap">TestCategory</td><td class="field-url">https://www.google.com</td></tr>'
         self.assertTrue(expected_str in response_body, f"{FAILURE_HEADER}We couldn't find the correct output in the Page view within the admin interface for page listings. Did you complete the exercises, adding extra columns to the admin view for this model? Are the columns in the correct order?{FAILURE_FOOTER}")
 
-
 class Chapter5PopulationScriptTests(TestCase):
     """
     Tests whether the population script puts the expected data into a test database.
